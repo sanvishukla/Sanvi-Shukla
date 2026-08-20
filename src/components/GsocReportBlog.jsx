@@ -216,7 +216,7 @@ const GsocReportBlog = () => {
 
         <h2 className="gsoc-subtitle">Acknowledgement</h2>
         <p style={{ marginBottom: '2rem' }}>
-          I am deeply thankful to Google Summer of Code and Open Science Labs for making this experience possible and for creating such a welcoming environment for open-source contribution. I would like to extend my special thanks to my mentors, Ivan Ogasawara and Reshama Shaikh, for their constant guidance, thoughtful feedback, and encouragement throughout the project. Their mentorship helped me not only make meaningful contributions to the Data Umbrella Event Board but also better understand the collaborative nature of open-source development. I am grateful to everyone in the OSL and Data Umbrella communities who made this journey such a valuable learning experience.
+          I am deeply thankful to Google Summer of Code and Open Science Labs for making this experience possible and for creating such a welcoming environment for open-source contribution. I would like to extend my special thanks to all my mentors for their constant guidance, thoughtful feedback, and encouragement throughout the project. Their mentorship helped me not only make meaningful contributions to the Data Umbrella Event Board but also better understand the collaborative nature of open-source development. I am grateful to everyone in the OSL and Data Umbrella communities who made this journey such a valuable learning experience.
         </p>
       </div>
     </div>
