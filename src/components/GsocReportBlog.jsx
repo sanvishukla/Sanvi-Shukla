@@ -126,9 +126,6 @@ const GsocReportBlog = () => {
           </ul>
 
 
-
-          <hr className="gsoc-divider" style={{ margin: '3rem 0' }} />
-
           <h3 className="gsoc-section-header">Technologies Utilized</h3>
           <ul className="gsoc-tech-list">
             <li><strong>Frontend Core:</strong> React, Vite, Framer Motion, Lucide-React</li>
