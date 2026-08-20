@@ -1,16 +1,34 @@
-# React + Vite
+# Sanvi Shukla - Academic Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Welcome to the repository for my academic and professional portfolio! 
 
-Currently, two official plugins are available:
+## Overview
+This is a responsive, single-page React application built with **Vite** and **Framer Motion**, designed to showcase my experience in Machine Learning, Artificial Intelligence, and Open-Source Development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Key Sections:
+- **Experience:** Mitacs Globalink Research Intern & HAIx Lab Research Intern.
+- **Open Source:** Contributions to Google Summer of Code (Data Umbrella) and Open Science Labs.
+- **Projects:** Various end-to-end Machine Learning pipelines, LLM fine-tuning, and full-stack development projects.
+- **Publications:** Research on deep learning applications in healthcare and environmental sciences.
 
-## React Compiler
+## Tech Stack
+- **Framework:** React 18
+- **Build Tool:** Vite
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Deployment:** GitHub Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Running Locally
 
-## Expanding the Oxlint configuration
+To run this project locally, make sure you have Node.js installed, then execute the following commands:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## Deployment
+This project is configured to automatically build and deploy to GitHub Pages via a GitHub Actions workflow whenever code is pushed to the `main` branch.
