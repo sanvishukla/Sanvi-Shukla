@@ -1,0 +1,125 @@
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1200px;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--color-border);
+}
+
+.exp-header-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.exp-logo-container {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 8px;
+  padding: 0.2rem;
+  border: 1px solid var(--color-border);
+}
+
+.exp-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.exp-header-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.exp-header, .exp-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.exp-company {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: -0.5px;
+}
+
+.exp-location {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.exp-role {
+  font-size: 1rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.exp-duration {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.exp-details {
+  margin-top: 0.8rem;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.exp-details li {
+  list-style-type: disc;
+  line-height: 1.5;
+}
+
+.exp-details strong {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.exp-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.exp-link:hover {
+  text-decoration-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .exp-header, .exp-subheader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+  
+  .exp-location, .exp-duration {
+    text-align: left;
+  }
+}

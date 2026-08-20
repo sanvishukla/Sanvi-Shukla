@@ -1,0 +1,40 @@
+.os-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.os-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.os-icon {
+  color: var(--color-text);
+}
+
+.os-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.os-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+  white-space: pre-line;
+}
+
+.os-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.font-medium {
+  font-weight: 500;
+}
