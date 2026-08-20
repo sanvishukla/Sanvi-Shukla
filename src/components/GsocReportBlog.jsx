@@ -125,19 +125,7 @@ const GsocReportBlog = () => {
             <li><strong>SEO and Analytics (<a href="https://github.com/data-umbrella/du-event-board/pull/186" target="_blank" rel="noreferrer" className="gsoc-link">#186</a>, <a href="https://github.com/data-umbrella/du-event-board/pull/203" target="_blank" rel="noreferrer" className="gsoc-link">#203</a>):</strong> Integrated <code>react-helmet-async</code> to dynamically inject <code>&lt;title&gt;</code> and <code>&lt;meta&gt;</code> description tags based on the active React route, automatically generating Open Graph meta tags for individual event pages to ensure accurate social media preview cards. Additionally, added <code>sitemap.xml</code> and <code>robots.txt</code> files to guide search engine crawlers, configured <code>netlify.toml</code> with redirect rules to prevent 404 errors on direct SPA links, and set up Google Analytics via <code>vite-plugin-radar</code> to track user engagement.</li>
           </ul>
 
-          <h3 className="gsoc-section-header">Impact & Learnings</h3>
-          <p>
-            This project taught me that open-source engineering involves more than implementing individual features. Each change needs to work within an existing architecture, development workflow, and community process.
-          </p>
-          <p>
-            Working on the Event Board gave me experience across frontend development, geospatial interfaces, search, automation, testing, CI, and deployment while contributing to a project used by an open-source community. I also gained a deeper understanding of designing contribution workflows that allow automation while retaining review and maintainability.
-          </p>
-          <p>
-            One of my key takeaways was that automation and reliability need to be developed together. Automating a workflow is only part of the solution; testing, validation, and review processes are equally important for keeping automated changes dependable.
-          </p>
-          <p>
-            While GSoC has concluded, development of the Data Umbrella Event Board continues, with further improvements to the user interface, SEO, analytics, and event discovery experience.
-          </p>
+
 
           <hr className="gsoc-divider" style={{ margin: '3rem 0' }} />
 
@@ -213,7 +201,23 @@ const GsocReportBlog = () => {
           </table>
         </div>
 
-        <h2 className="gsoc-subtitle" style={{ marginTop: '4rem' }}>Acknowledgement</h2>
+        <h3 className="gsoc-subtitle" style={{ marginTop: '4rem', fontFamily: 'var(--font-serif)', fontSize: '2rem' }}>Impact & Learnings</h3>
+        <div className="gsoc-content-text" style={{ marginBottom: '3rem' }}>
+          <p>
+            This project taught me that open-source engineering involves more than implementing individual features. Each change needs to work within an existing architecture, development workflow, and community process.
+          </p>
+          <p>
+            Working on the Event Board gave me experience across frontend development, geospatial interfaces, search, automation, testing, CI, and deployment while contributing to a project used by an open-source community. I also gained a deeper understanding of designing contribution workflows that allow automation while retaining review and maintainability.
+          </p>
+          <p>
+            One of my key takeaways was that automation and reliability need to be developed together. Automating a workflow is only part of the solution; testing, validation, and review processes are equally important for keeping automated changes dependable.
+          </p>
+          <p>
+            While GSoC has concluded, development of the Data Umbrella Event Board continues, with further improvements to the user interface, SEO, analytics, and event discovery experience.
+          </p>
+        </div>
+
+        <h2 className="gsoc-subtitle">Acknowledgement</h2>
         <p style={{ marginBottom: '2rem' }}>
           I am deeply thankful to Google Summer of Code and Open Science Labs for making this experience possible and for creating such a welcoming environment for open-source contribution. I would like to extend my special thanks to my mentors, Ivan Ogasawara and Reshama Shaikh, for their constant guidance, thoughtful feedback, and encouragement throughout the project. Their mentorship helped me not only make meaningful contributions to the Data Umbrella Event Board but also better understand the collaborative nature of open-source development. I am grateful to everyone in the OSL and Data Umbrella communities who made this journey such a valuable learning experience.
         </p>
