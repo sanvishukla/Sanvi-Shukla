@@ -41,13 +41,13 @@ const GsocReportBlog = () => {
             The Data Umbrella (DU) Event Board is a community-driven event discovery platform designed to help users find tech events, meetups, and workshops globally. Built as a statically generated frontend application, it relies on a streamlined "GitOps" architecture: events are sourced from a single YAML file, processed into JSON via Python scripts, and rendered dynamically using React and Vite.
           </p>
           <p>
-            During Google Summer of Code (GSoC) 2026, the primary goal was to transform this foundational setup into a highly scalable, automated, and feature-rich application to better serve the growing Data Umbrella community. The development scope focused on completely overhauling the user discovery experience and the maintainer workflow. To enhance discovery, the frontend was expanded with a robust interactive map using react-leaflet, weighted fuzzy searching via Fuse.js, dedicated event detail pages, and deep-linking capabilities that allow users to serialize and share specific filter states through URLs.
+            During GSoC, the project focused on expanding the event discovery experience, automating event ingestion, strengthening testing, and improving deployment and SEO. To enhance discovery, the frontend was expanded with a robust interactive map using react-leaflet, weighted fuzzy searching via Fuse.js, dedicated event detail pages, and deep-linking capabilities that allow users to serialize and share specific filter states through URLs.
           </p>
           <p>
             On the maintainer side, the manual process of adding events was replaced with a fully automated ingestion pipeline. By leveraging GitHub Actions and custom Python scripts, community members can now submit events via Google Forms or a custom GitHub Issue template, which automatically provisions environments, validates the data, and opens a formatted Pull Request. This automation was supported by rigorous unit testing with Vitest and Pytest, SEO metadata formatting, dead-link validation, and CI/CD enhancements for custom domain deployment. 
           </p>
           <p>
-            Ultimately, this GSoC project resulted in a dependable, user-friendly, and highly automated platform. Maintainer overhead for managing community event submissions has been drastically reduced thanks to the automated CI/CD and PR generation pipelines, while end-users now benefit from a highly responsive and deeply searchable interface that seamlessly connects them with tech events and resources worldwide.
+            Ultimately, this GSoC project resulted in a more automated and maintainable platform. The automated workflows reduce the amount of manual work required from maintainers when processing event submissions, while end-users now benefit from a highly responsive and deeply searchable interface that seamlessly connects them with tech events and resources worldwide.
           </p>
         </div>
       </div>
@@ -138,7 +138,7 @@ const GsocReportBlog = () => {
 
         <h2 className="gsoc-subtitle" style={{ marginTop: '4rem' }}>PRs Summary</h2>
         <p style={{ marginBottom: '1.5rem' }}>
-          The table below highlights the pull requests I authored after being officially selected for GSoC. For a complete history of my work, including pre-GSoC contributions, you can <strong><a href="https://github.com/data-umbrella/du-event-board/issues?q=is%3Apr%20author%3Asanvishukla" target="_blank" rel="noreferrer" className="gsoc-link">view all my pull requests here</a></strong>.
+          The table below highlights the pull requests I worked on during the GSoC period. For a complete history of my work, including pre-GSoC contributions, you can <strong><a href="https://github.com/data-umbrella/du-event-board/issues?q=is%3Apr%20author%3Asanvishukla" target="_blank" rel="noreferrer" className="gsoc-link">view all my pull requests here</a></strong>.
         </p>
         
         <div className="table-responsive">
