@@ -30,7 +30,7 @@ const GsocReportBlog = () => {
         <li><strong>Email:</strong> <a href="mailto:sanvishukla@gmail.com">sanvishukla@gmail.com</a></li>
         <li><strong>GitHub:</strong> <a href="https://github.com/sanvishukla" target="_blank" rel="noreferrer">https://github.com/sanvishukla</a></li>
         <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sanvishukla/" target="_blank" rel="noreferrer">https://www.linkedin.com/in/sanvishukla/</a></li>
-        <li><strong>Project Repository:</strong> <a href="https://github.com/Data-Umbrella/event-board" target="_blank" rel="noreferrer">Data Umbrella Event Board</a></li>
+        <li><strong>Project Repository:</strong> <a href="https://github.com/data-umbrella/du-event-board" target="_blank" rel="noreferrer">Data Umbrella Event Board</a></li>
         <li><strong>Project Deployment:</strong> <a href="https://events.dataumbrella.org/" target="_blank" rel="noreferrer">https://events.dataumbrella.org/</a></li>
       </ul>
 
