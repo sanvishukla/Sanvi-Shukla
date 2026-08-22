@@ -1,8 +1,10 @@
 import React from 'react';
-import { Download } from 'lucide-react';
+import { Download, Sun, Moon } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaGraduationCap, FaDiscord } from 'react-icons/fa';
+import { useTheme } from '../context/ThemeContext';
 
 const Sidebar = ({ isOpen, activeSection }) => {
+  const { theme, toggleTheme } = useTheme();
   const navItems = [
     { num: '01', label: 'Home', id: 'home' },
     { num: '02', label: 'Education', id: 'education' },
@@ -44,10 +46,21 @@ const Sidebar = ({ isOpen, activeSection }) => {
           <a href="https://discord.com/users/_sanvishukla_" target="_blank" rel="noreferrer" className="social-icon" aria-label="Discord" title="Discord: _sanvishukla_"><FaDiscord size={20} /></a>
         </div>
 
-        <button className="download-btn">
-          <Download size={16} />
-          Download CV
-        </button>
+        <div style={{ display: 'flex', gap: '1rem' }}>
+          <button className="download-btn" style={{ flex: 1 }}>
+            <Download size={16} />
+            CV
+          </button>
+          
+          <button 
+            className="download-btn" 
+            onClick={toggleTheme}
+            aria-label="Toggle Dark Mode"
+            style={{ padding: '0.75rem', flex: '0 0 auto' }}
+          >
+            {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
+          </button>
+        </div>
       </div>
     </aside>
   );

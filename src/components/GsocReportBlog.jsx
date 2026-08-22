@@ -2,6 +2,7 @@ import React from 'react';
 import gsocLogo from '../assets/GSoC.png';
 import oslLogo from '../assets/OSL.png';
 import './GsocReportBlog.css';
+import GiscusComments from './GiscusComments';
 
 const GsocReportBlog = () => {
   return (
@@ -218,6 +219,10 @@ const GsocReportBlog = () => {
         <p style={{ marginBottom: '2rem' }}>
           I am deeply thankful to Google Summer of Code and Open Science Labs for making this experience possible and for creating such a welcoming environment for open-source contribution. I would like to extend my special thanks to all my mentors for their constant guidance, thoughtful feedback, and encouragement throughout the project. Their mentorship helped me not only make meaningful contributions to the Data Umbrella Event Board but also better understand the collaborative nature of open-source development. I am grateful to everyone in the OSL and Data Umbrella communities who made this journey such a valuable learning experience.
         </p>
+      </div>
+      
+      <div className="gsoc-content-body">
+        <GiscusComments />
       </div>
     </div>
   );

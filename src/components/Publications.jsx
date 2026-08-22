@@ -16,7 +16,7 @@ const Publications = () => {
           Adaptive Text Inputs: Contextual Hint-Text Generation for Enhancing Mobile Apps Accessibility using Text-to-Text Transformer Language Models and Q-learning
         </h3>
 
-        <div className="exp-subheader" style={{ marginBottom: '1rem', alignItems: 'center' }}>
+        <div className="exp-subheader" style={{ marginBottom: '1rem' }}>
           <span className="exp-role" style={{ fontWeight: 'normal', color: 'var(--color-text-muted)', fontSize: '1rem' }}>
             <strong style={{ color: 'var(--color-text)' }}>Sanvi Shukla</strong>, Dr. Yogesh Kumar Meena
           </span>
