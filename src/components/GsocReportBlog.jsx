@@ -27,6 +27,7 @@ const GsocReportBlog = () => {
       <ul className="gsoc-info-list">
         <li><strong>Name:</strong> Sanvi Shukla</li>
         <li><strong>Organization:</strong> Open Science Labs</li>
+        <li><strong>Project Size:</strong> Large (350hrs)</li>
         <li><strong>Mentors:</strong> Ivan Ogasawara, Yuvi Mittal, Reshama S, Devshree</li>
         <li><strong>Email:</strong> <a href="mailto:sanvishukla@gmail.com">sanvishukla@gmail.com</a></li>
         <li><strong>GitHub:</strong> <a href="https://github.com/sanvishukla" target="_blank" rel="noreferrer">https://github.com/sanvishukla</a></li>
