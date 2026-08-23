@@ -5,20 +5,24 @@ import Section from '../components/Section';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
 import ProjectCard from '../components/ProjectCard';
+import ProjectModal from '../components/ProjectModal';
 import OpenSource from '../components/OpenSource';
 import Publications from '../components/Publications';
 import Achievements from '../components/Achievements';
 import BlogSection from '../components/BlogSection';
 import { Menu, X } from 'lucide-react';
+import lulcImage from '../assets/lulc-resnet.png';
+import arUnityImage from '../assets/ar-unity.png';
+import rgiptImage from '../assets/rgipt-portal.png';
 
 function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'education', 'experience', 'opensource', 'publications', 'projects', 'blog', 'achievements', 'contact'];
-      
+      const sections = ['home', 'education', 'experience', 'opensource', 'publications', /* 'projects', */ 'blog', 'achievements', 'contact'];
       let currentSection = 'home';
       let maxTop = -Infinity;
       const threshold = window.innerHeight * 0.4; // Trigger when section is 40% from the top
@@ -62,7 +66,48 @@ function Home() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  const projectsData = [];
+  const projectsData = [
+    {
+      title: "RGIPT Student Portal",
+      subtitle: "March 2024",
+      description: "A comprehensive student portal developed with Flask and MySQL to manage role-based access for students and hostel administration. The platform features a secure OTP-based email authentication system, dynamic CRUD database operations, and an automated gate pass workflow that programmatically generates fully-formatted PDFs. It also integrates the Razorpay API for secure, real-time fee transactions with server-side webhook validation.",
+      tags: ["Python", "Flask", "MySQL", "JavaScript", "HTML/CSS", "Razorpay"],
+      media: rgiptImage,
+      links: [
+        { label: "GitHub", url: "https://github.com/sanvishukla/RGIPT-student-portal" }
+      ]
+    },
+    {
+      title: "Interactive AR Mechanism Assembly Simulator",
+      subtitle: "March 2024",
+      description: "Developed an immersive, interactive Augmented Reality (AR) application using Unity and C# designed to facilitate the understanding of complex mechanical systems. By leveraging optimized CAD models (FBX/OBJ), the application allows users to interactively assemble and disassemble intricate mechanisms step-by-step.",
+      tags: ["Unity 3D", "C#", "Vuforia", "AR Foundation", "Android"],
+      media: arUnityImage,
+      links: [
+        { label: "GitHub", url: "https://github.com/sanvishukla/AR-Unity-project" }
+      ]
+    },
+    {
+      title: "Land Use and Land Cover (LULC) Classification",
+      subtitle: "February 2024",
+      description: "Developed a deep learning pipeline for multi-class image classification by implementing the ResNet-50 architecture from scratch using the TensorFlow/Keras Functional API. The project involved end-to-end model development, from data ingestion and preprocessing to model training, evaluation, and visualization.",
+      tags: ["Python", "TensorFlow", "Keras", "NumPy", "Matplotlib", "Seaborn", "Rasterio"],
+      media: lulcImage,
+      links: [
+        { label: "GitHub", url: "https://github.com/sanvishukla/SIF_space_hackathon_2023" }
+      ]
+    },
+    {
+      title: "Autodesk Maya Animation",
+      subtitle: "February 2024",
+      description: "A 3D animation sequence built in Autodesk Maya. The project involved character auto-rigging, 140 frames of manual keyframe animation, dynamic parent constraints for object interaction, and a camera rig constrained to a NURBS curve path. I also handled scene optimization, lighting, custom Surface Shaders for emissive effects, and final sequence rendering.",
+      tags: ["Autodesk Maya", "Rigging & Animation", "Dynamic Constraints", "Camera Tracking", "Lighting & Shading"],
+      media: "https://raw.githubusercontent.com/sanvishukla/Autodesk-Maya-Animation/main/22cs3054_gvc.mp4",
+      links: [
+        { label: "GitHub", url: "https://github.com/sanvishukla/Autodesk-Maya-Animation" }
+      ]
+    }
+  ];
 
   return (
     <div className="app-container">
@@ -113,11 +158,15 @@ function Home() {
           <Publications />
         </Section>
 
+        {/* 
         <Section id="projects" num="06" title="PROJECTS">
-          {projectsData.map((proj, idx) => (
-            <ProjectCard key={idx} {...proj} />
-          ))}
-        </Section>
+          <div className="projects-grid">
+            {projectsData.map((proj, idx) => (
+              <ProjectCard key={idx} project={proj} onClick={setSelectedProject} />
+            ))}
+          </div>
+        </Section> 
+        */}
 
         <Section id="blog" num="07" title="BLOG">
           <BlogSection />
@@ -143,6 +192,10 @@ function Home() {
           <div style={{ flex: '1 1 auto' }}>&copy; 2026 Sanvi Shukla</div>
         </footer>
       </main>
+      
+      {selectedProject && (
+        <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+      )}
     </div>
   );
 }
